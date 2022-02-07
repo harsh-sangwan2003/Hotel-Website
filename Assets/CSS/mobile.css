@@ -40,6 +40,12 @@
     width: 100%;
 }
 
+/* Testimonials */
+#testimonials{
+
+    height: 100%;
+}
+
 /* About-Info */
 #about-info .info-right, #about-info .info-left{
 
