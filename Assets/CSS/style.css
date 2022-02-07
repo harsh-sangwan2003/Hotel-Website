@@ -159,7 +159,7 @@ a{
 
 /* Showcase */
 #showcase{
-    background: url("../images/showcase.jpg") no-repeat center center/cover;
+    background: url("../Images/showcase.jpg") no-repeat center center/cover;
     height: 600px;
 }
 
@@ -192,7 +192,7 @@ a{
 
     float: left;
     width: 50%;
-    background: url('../images/photo-1.jpg') no-repeat center center/cover;
+    background: url('../Images/photo-1.jpg') no-repeat center center/cover;
     min-height: 100%;
 }
 
