@@ -1,4 +1,4 @@
-/* Reset */
+/* CSS Reset */
 *{
 
     margin: 0;
@@ -6,18 +6,69 @@
     box-sizing: border-box;
 }
 
-/* Utility Styling */
-.container{
+/* Utility String */
+.container-1{
 
-    max-width: 1200px;
     margin: auto;
+    max-width: 1500px;
     overflow: auto;
-    padding: 0 10px;
+    padding: 0 20px;
+}
+
+.container-2{
+
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.py-1{padding:10px 0;}
+.py-2{padding:20px 0;}
+.py-3{padding:30px 0;}
+
+.l-heading{
+
+    font-size: 40px;
+}
+
+.clr{
+
+    clear: both;
+}
+
+.lead{
+
+    font-size: 20px;
 }
 
 .text-primary{
 
     color:#f7c08a;
+}
+
+.btn{
+
+    display: inline-block;
+    font-size: 18px;
+    background-color: #333;
+    color:#fff;
+    padding:13px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover{
+
+    background-color: #f7c08a;
+    color:#333;
+}
+
+.btn-light{
+
+        background-color: #f4f4f4;
+        color: #333;
 }
 
 .bg-dark{
@@ -28,9 +79,8 @@
 
 .bg-light{
 
-    background-color: #f4f4f4ff;
+    background-color: #f4f4f4;
     color:#333;
-
 }
 
 .bg-primary{
@@ -39,55 +89,12 @@
     color:#333;
 }
 
-.lead{
-
-    font-size: 20px;
-}
-
-.btn{
-
-    display: inline-block;
-    font-size: 18px;
-    background-color: #333;
-    border: none;
-    padding: 20px;
-    color:#fff;
-    cursor: pointer;
-}
-
-.btn-light{
-
-    background-color: #f4f4f4ff;
-    color:#333;
-}
-
-.btn:hover{
-
-    background-color: #f7c08a;
-    color:#333;
-}
-
-.py-1{ padding: 10px 0px;}
-.py-2{ padding: 20px 0px;}
-.py-3{ padding: 30px 0px;}
-.py-4{ padding: 40px 0px;}
-
-.clr{
-
-    clear:both;
-}
-
-.l-heading{
-
-    font-size: 40px;
-    line-height: 1.3rem;
-}
-
 /* Main Styling */
 html,body{
 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     line-height: 1.7em;
+    scroll-behavior: smooth;
 }
 
 h1,h2,h3{
@@ -102,32 +109,33 @@ p{
 
 a{
 
-    color:#333;
+    color: #333;
     text-decoration: none;
 }
 
-/* Navbar Styling */
+/* Navbar */
 #navbar{
 
     background-color: #333;
-    color:#fff;
+    color: #fff;
     overflow: auto;
 }
 
 #navbar a{
 
-    color:#fff;
+    color: #fff;
 }
 
 #navbar .logo{
 
     float: left;
+    text-align: center;
     padding-top: 20px;
 }
 
 #navbar ul{
 
-    float:right;
+    float: right;
     list-style: none;
 }
 
@@ -139,35 +147,33 @@ a{
 #navbar ul li a{
 
     display: block;
+    padding: 20px;
     text-align: center;
-    padding:20px
 }
 
-#navbar ul li a:hover,#navbar ul li a.current{
+#navbar ul li a:hover, .current{
 
-    background-color: #444;
-    color:#f7c08a;
+    background: #444;
+    color: #f7c08a;
 }
 
-/* Showcase Styling */
-
+/* Showcase */
 #showcase{
-
-    background: url("../Images/showcase.jpg") no-repeat center center/cover;
+    background: url("../images/showcase.jpg") no-repeat center center/cover;
     height: 600px;
 }
 
 #showcase .showcase-content{
 
     text-align: center;
-    color: #fff;
     padding-top: 170px;
+    color: #fff;
 }
 
 #showcase .showcase-content h1{
 
     font-size: 60px;
-    line-height: 1.4em;
+    line-height: 1.2em;
 }
 
 #showcase .showcase-content p{
@@ -176,18 +182,17 @@ a{
     padding-bottom: 20px;
 }
 
-/* Home-info Styling */
+/* Home-Info */
 #home-info{
 
-    height: 450px;
-    text-align: center;
+    height:450px;
 }
 
 #home-info .info-img{
 
     float: left;
     width: 50%;
-    background: url("../Images/photo-1.jpg") no-repeat;
+    background: url('../images/photo-1.jpg') no-repeat center center/cover;
     min-height: 100%;
 }
 
@@ -196,47 +201,39 @@ a{
     float: right;
     width: 50%;
     height: 100%;
-    padding: 50px 30px;
     text-align: center;
-    /* If anything goes outside we don't have a scroll-bar */
+    padding:50px 30px;
     overflow: hidden;
 }
 
 #home-info .info-content p{
 
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
-/* Featues Styling */
+/* Features */
 .box{
 
-    float:left;
-    text-align: center;
+    float: left;
     width: 33.3%;
-    padding: 50px;
+    padding:50px;
+    text-align: center;
 }
 
 .box i{
 
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-/* About Styling */
-.info-left{
+/* About-Info */
+#about-info .info-right{
 
-    float:left;
+    float:right;
     width: 50%;
     min-height: 100%;
 }
 
-.info-right{
-
-   float: right;
-   width: 50%;
-   min-height: 100%;
-}
-
-.info-right img{
+#about-info .info-right img{
 
     display: block;
     margin: auto;
@@ -244,77 +241,81 @@ a{
     border-radius: 50%;
 }
 
-/* Testimonals Styling */
-#testimonials {
+#about-info .info-left{
 
-    height: 100%;
-    background: url("../Images/test-bg.jpg") no-repeat center center/cover;
-    padding-top: 100px;
+    float: left;
+    width: 50%;
+    min-height: 100%;
 }
 
-#testimonials .container{
+/* Testimonials */
+#testimonials{
 
+    background: url('../images/test-bg.jpg') no-repeat center center/cover;
+    height: 100%;
+    padding-top: 100px;
     text-align: center;
 }
 
-#testimonials h2{
+#testimonials  h2{
 
     color: #fff;
-    padding-bottom: 60px;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 #testimonials .testimonial{
 
-    margin-bottom: 40px;
     padding: 20px;
+    margin-bottom: 40px;
     border-radius: 5px;
     opacity: 0.8;
+    overflow: auto;
 }
 
 #testimonials .testimonial img{
 
+    width: 80px;
     float: left;
-    width: 100px;
-    padding-right: 20px;
+    margin-right: 20px;
     border-radius: 50%;
+
 }
 
-/* Contact Stying */
-#contact-form .form-group{
+/* Contact Form */
+.form-group{
 
     margin-bottom: 20px;
 }
 
-#contact-form label{
+.form-group label{
 
     display: block;
+    margin-bottom: 5px;
 }
 
-#contact-form input, #contact-form textarea{
+.form-group input, .form-group textarea{
 
     width: 100%;
     padding:10px;
     border: 1px solid #ddd;
 }
 
-#contact-form textarea{
+.form-group textarea{
 
     height: 200px;
 }
 
-#contact-form input:focus, #contact-form textarea:focus{
+.form-group input:focus, .form-group textarea:focus{
 
     outline: none;
     border-color: #f7c08a;
 }
-
-/* Footer Styling */
+/* Footer */
 #main-footer{
 
     background-color: #444;
     color:#fff;
+    padding:20px;
     text-align: center;
-    font-size: 20px;
-    padding: 20px;
 }
